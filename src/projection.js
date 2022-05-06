@@ -74,7 +74,7 @@ function changeProjection()
 
   if (camera instanceof THREE.PerspectiveCamera)
   {
-    var s = 72; // Estimated size for orthographic projection
+    var s = 70; // Estimated size for orthographic projection
     camera = new THREE.OrthographicCamera(-window.innerWidth / s, window.innerWidth / s,
                                             window.innerHeight / s, window.innerHeight / -s, -s, s);
     projectionMessage.changeMessage("Orthographic");
